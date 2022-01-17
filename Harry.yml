@@ -1,0 +1,8 @@
+- hosts: all
+  become: true
+  tasks:
+  - name: Create a user
+    user:
+     name: Harry_Potter
+     state: present
+     password: password
